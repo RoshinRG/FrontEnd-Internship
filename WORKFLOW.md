@@ -1,4 +1,4 @@
-﻿# WORKFLOW.md — Vague vs. Precise AI Prompting Analysis
+# WORKFLOW.md — Vague vs. Precise AI Prompting Analysis
 
 This document details the comparative workflow assessment of building a profile settings form using two distinct prompting approaches.
 
@@ -9,7 +9,7 @@ This document details the comparative workflow assessment of building a profile 
 | Metric | Round 1 (Vague) | Round 2 (Precise) |
 |--------|----------------|------------------|
 | **Prompt Style** | Lazy, one-sentence, context-free | Spec-driven, constraint-based, test-first |
-| **Files Modified** | `settings.html`, `settings.js` | `settings.html`, `settings.css`, `settings.js`, `settings.test.js` |
+| **Files Modified** | `fe-02-settings/settings.html`, `fe-02-settings/settings.js` | `fe-02-settings/settings.html`, `fe-02-settings/settings.css`, `fe-02-settings/settings.js`, `fe-02-settings/settings.test.js` |
 | **Code Footprint** | 43 lines | 388 lines |
 | **Development Loops** | 1 (accepted first generation) | 2 (write & run automated tests) |
 
