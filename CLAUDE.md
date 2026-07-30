@@ -1,4 +1,4 @@
-﻿# CLAUDE.md — AI Assistant Conventions
+# CLAUDE.md — AI Assistant Conventions
 
 This file tells Claude (and other AI assistants) how to work in this repository.
 Read it before generating any code or suggestions.
@@ -35,6 +35,11 @@ Read it before generating any code or suggestions.
 - No frontend frameworks (React, Vue, etc.) unless a week's brief explicitly requires it.
 - DOM queries: prefer `querySelector` / `querySelectorAll`.
 - Error handling: always use `try/catch` around `fetch` calls.
+
+### Form Validation & DOM
+- Every interactive form control MUST associate with a `<label>` element via matching `for` and `id` attributes. Never use placeholders as the sole label.
+- Live field errors must announce accessibly: use `aria-describedby` pointing to a visible error span containing `aria-live="polite"`. The error message element must be present in initial HTML rather than dynamically injected.
+- Validation logic must be written as pure functions that return `{ valid: boolean, message: string }`, accepting input values as simple string arguments to enable test runner validation without a browser DOM.
 
 ### Git
 - Commit format: **Conventional Commits 1.0.0** — `<type>(<scope>): <description>`
